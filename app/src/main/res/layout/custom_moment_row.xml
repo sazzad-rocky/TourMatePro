@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvMomentDetails"
+        android:text="ABCD"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:minHeight="100dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/ivMomentImage" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/tvMomentDetails"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tvMomentDetails" />
+
+    <ImageView
+        android:id="@+id/ivMomentImage"
+        android:src="@drawable/camera"
+        android:scaleType="fitXY"
+        android:padding="2dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
